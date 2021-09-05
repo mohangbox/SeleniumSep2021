@@ -6,10 +6,8 @@ public class NegativeNumber {
 		int number = -40, num2;
 		if (number < 0) {
 			System.out.println("The number is negative number" + number);
-			num2 = number - (number * 2);
+			num2 = (number * -1);
 			System.out.println("The positive number is " + num2);
 		}
-
 	}
-
 }
