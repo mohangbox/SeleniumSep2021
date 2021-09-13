@@ -240,13 +240,13 @@ public class LeafGroundAssignments {
 		driver.findElement(By.id("yes")).click();
 		
 		//Check Default Selected Radio button
-		if(driver.findElement(By.xpath("//label[@for='Checked']")).isSelected()==true)
+		if(driver.findElement(By.xpath("//*[@id='contentblock']/section/div[2]/div/div/label[3]/input")).isSelected()==true)
 			System.out.println("The Default Selected Radio button already selected");
 		else
 			System.out.println("The Default Selected Radio button NOT selected");
 		
 		//Select your age group (Only if choice wasn't selected)
-		driver.findElement(By.xpath("//input[@value='0'][@name='age']")).click();
+		driver.findElement(By.xpath("//*[@id='contentblock']/section/div[3]/div/div/input[1]")).click();
 		
 		//Navigate to home page
 		driver.findElement(By.xpath("//img[@alt='logo Testleaf']")).click();
